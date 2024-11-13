@@ -1,0 +1,139 @@
+#experience {
+    background-color: #3d3e42;
+    padding: 2rem;
+    color: #f9f9f9;
+}
+
+.aboutme {
+    font-size: 3rem;
+    font-weight: 300;
+    margin: 0.5rem 0 1.5rem;
+    color: #efecec;
+    padding-bottom: 30px;
+}
+
+.timeline {
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto;
+    padding-left: 20px;
+    border-left: 3px solid #f5c269;
+}
+
+/* List and item styles */
+.timeline ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.timeline-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+/* Circle style */
+.circle {
+    width: 15px;
+    height: 15px;
+    background-color: #f5c269;
+    border-radius: 50%;
+    position: relative;
+    cursor: pointer;
+    margin-left: -28px;
+    top: -80px; /* Adjusted to better align with the timeline */
+}
+
+/* Tooltip style */
+.tooltip {
+    position: absolute;
+    right: 170%; /* Positions tooltip to the left of circle */
+    top: 50%;
+    transform: translateY(-50%);
+    opacity: 0;
+    background-color: #5d5e61;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+    white-space: nowrap;
+    font-family: 'Arial', sans-serif; 
+
+}
+
+.tooltip::before {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color:#5d5e61;
+    transform: rotate(45deg);
+    left: 95%; /* Triangle points towards the circle */
+    top: 50%;
+    margin-top: -5px;
+}
+/* Shiny effect on hover */
+.circle:hover {
+    box-shadow: 0 0 15px 5px rgba(255, 215, 0, 0.8); /* Shiny glow */
+    transform: scale(1.2); /* Slightly enlarges the circle */
+    width: 20px;
+    height: 20px;
+    margin-left: -32px;
+
+}
+
+/* Show tooltip on hover */
+.circle:hover .tooltip {
+    opacity: 1;
+}
+
+/* Experience details */
+.experience-details {
+    padding: 15px;
+    margin-left: 20px;
+    color: #fff;
+    flex: 1;
+}
+
+.title {
+    font-size: 1.6rem;
+    font-family: 'Arial', sans-serif;
+}
+
+.subtitle {
+    font-family: 'Arial', sans-serif; 
+    font-size: 1.2rem;
+    padding: 10px;
+}
+
+/* Experience list styles */
+.experience-list {
+    list-style-type: none;
+    margin-left: 20px;
+    padding-left: 0;
+}
+
+.experience-item {
+    position: relative;
+    margin-bottom: 8px;
+    padding-left: 20px;
+    color: #bbb;
+    font-size: 1.1rem;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Custom dot for each experience-item */
+.experience-item::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0.5em;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: #ddd;
+}

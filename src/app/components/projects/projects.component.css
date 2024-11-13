@@ -1,0 +1,199 @@
+#projects {
+    background-color: #31333b;
+    padding: 2rem;
+    color: #f9f9f9;
+  }
+  h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .projects-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); /* 4 cards per row */
+    gap: 20px; /* Space between the cards */
+    margin-top: 20px;
+  }
+  
+  .project-card {
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .project-card:hover {
+    transform: scale(1.05); /* Slight zoom effect on hover */
+  }
+  
+  .project-image {
+    position: relative;
+    height: 300px; /* Adjust this to the desired height */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  
+  
+ /* Make sure the .overlay container is flexible and aligned */
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Align vertically */
+    align-items: center; /* Align horizontally */
+    background: rgba(0, 0, 0, 0.5); /* Dark overlay */
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    padding: 20px;
+    color: white;
+    text-align: center;
+  }
+  
+  /* Hover to show the overlay */
+  .project-card:hover .overlay {
+    opacity: 1;
+  }
+  
+  /* Styling for the "See More" button */
+  .see-more-btn {
+    color: #31333b;
+    background-color: #f5c269;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-top: 10px;
+    display: inline-block; /* Makes it adjust based on its content */
+  }
+  h3 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 3rem;
+    font-weight: 300;
+    color: #efecec; 
+    margin-top: 30px    ;
+
+  }
+  /* Styling for the outer "view more" button at the bottom */
+  .view-more-btn {
+    color: #31333b;
+    background-color: #f5c269;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-top: 20px;
+    display: block; /* Ensures it's a block element to center it */
+    margin-left: auto;
+    width: 10%;
+    margin-right: auto; /* Centers horizontally */
+    text-align: center; /* Ensures the text is centered inside the button */
+  }
+  
+  /* Optional: Hover effect for the buttons */
+  .see-more-btn:hover, .view-more-btn:hover {
+    background-color: #e0a84f; /* Darker shade for hover effect */
+  }
+  
+  
+  .project-details {
+    padding: 15px;
+    text-align: center;
+  }
+  
+  .project-details h3 {
+    font-size: 1.5em;
+    margin: 10px 0;
+  }
+  
+  .project-details p {
+    font-size: 1em;
+    margin: 10px 0;
+    color: #fff;
+  }
+  
+  .experience {
+    background-color: #3d3e42;
+    color: #f9f9f9;
+    margin-top: 50px;
+  }
+  
+  h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .timeline {
+    position: relative;
+    max-width: 900px;
+    margin: 0 auto;
+  }
+  
+  .timeline ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .timeline-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    position: relative;
+  }
+  
+  .circle {
+    width: 20px;
+    height: 20px;
+    background-color: #f5c269;
+    border-radius: 50%;
+    position: absolute;
+    left: -10px; /* Position the circle on the left side of the line */
+    top: 0;
+  }
+  
+  .experience-details {
+    background-color: #444;
+    padding: 15px;
+    border-radius: 10px;
+    color: #fff;
+    flex: 1;
+    margin-left: 40px; /* Space between circle and experience details */
+  }
+  
+  .experience-details h3 {
+    font-size: 1.2em;
+    margin-bottom: 5px;
+  }
+  
+  .experience-details p {
+    font-size: 1em;
+    margin: 10px 0;
+  }
+  
+  .experience-details span {
+    font-size: 0.9em;
+    color: #aaa;
+    display: block;
+  }
+  
+  .timeline-item::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 2px;
+    height: 100%;
+    background-color: #f5c269; /* Line color */
+  }
+  

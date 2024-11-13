@@ -1,0 +1,30 @@
+/* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Set full height and remove background color on edges */
+html, body {
+    height: 100%; /* Ensures full height */
+    background-color: #3d3e42; /* Example background color */
+    font-family: 'Arial', sans-serif; /* Optional: Set a global font */
+}
+
+/* Optional: if you want a specific background color */
+body {
+    background-color: #3d3e42; /* Change to your desired background color */
+    color: #f9f9f9; /* Text color */
+}
+
+/* Remove white edges from the body */
+#app {
+    height: 100%;
+}
+
+/* Optional: specific section styling */
+section {
+    padding: 2rem;
+    margin: 0;
+}

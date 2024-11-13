@@ -1,0 +1,89 @@
+/* src/app/components/about/about.component.css */
+section#about {
+    background-color: #31333b;
+    padding: 2rem;
+    color: #f9f9f9;
+  }
+  
+
+  
+  #about h1 {
+    margin-bottom: 10px; /* Adds space between the title and the content */
+  }
+  .aboutme{
+    font-size: 3rem;
+    font-weight: 300;
+    margin: 0.5rem 0 1.5rem;
+    color: #efecec; 
+
+
+  }
+  .about-content {
+    display: flex;
+    align-items: flex-start; /* Aligns the red line and paragraph to the left */
+    font-family: 'Arial', sans-serif;
+
+  }
+  
+  .orange-line {
+    width: 80px; /* Make the line span the full width */
+    height: 2px; /* Set the height of the line */
+    background-color: #f5c269; /* Red color for the line */
+    margin-right: 15px; /* Adds space between the red line and the paragraph */
+    margin-top: 13px;
+  }
+  
+  #about p {
+    font-size: 1.2em;
+    line-height: 1.6em;
+    margin: 0; /* Removes default margin */
+  }
+  h3 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 3rem;
+    font-weight: 300;
+    color: #efecec; 
+    margin-top: 30px    ;
+
+  }
+  
+  .skills-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Creates 4 columns */
+    gap: 20px; /* Space between the cards */
+  }
+  
+  .skill-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    background-color: #3d3e42;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .skill-card:hover {
+    transform: translateY(-10px); /* Slight lift effect */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); /* Shadow effect */
+    background-color: #f5c269;
+  }
+  
+  .skill-icon {
+    width: 60px; /* Set a fixed width for the icons */
+    height: 60px; /* Set a fixed height for the icons */
+    margin-bottom: 15px; /* Adds space between the icon and the skill name */
+  }
+  
+  .skill-card h4 {
+    font-size: 1.1em;
+    color: #eeeef1;
+    margin: 0;
+  }
+.skills-category h2{
+
+    color: #eeeef1;  
+    padding: 30px;
+}
