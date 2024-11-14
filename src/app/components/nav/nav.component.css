@@ -1,0 +1,150 @@
+header {
+    background-color: #34353a;
+    color: white;
+    text-align: center;
+    padding: 0rem 1rem;
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+header .logo img {
+    width: 50px; /* Adjust the size of your logo */
+    height: auto;
+  }
+/* Header title */
+header h1 {
+    font-size: 2rem;
+    margin: 0;
+    font-weight: 600;
+}
+
+/* Header paragraph */
+header p {
+    font-size: 1rem;
+    font-weight: 300;
+    margin: 0.5rem 0 1.5rem;
+    color: #4f0b0b;
+}
+
+.profession{
+    font-size: 2rem;
+    font-weight: 300;
+    margin: 0.5rem 0 1.5rem;
+    color: #efecec; 
+    font-family: 'Arial', sans-serif;
+
+}
+.about{
+    font-size: 1.1rem;
+    font-weight: 300;
+    width: 600px;
+    margin: 0.5rem 0 1.5rem;
+    color: #bbb; 
+    font-family: 'Arial', sans-serif; 
+
+}
+/* Centered Navbar */
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    align-items: center;
+    font-size: 1rem;
+    flex-grow: 1;
+}
+
+nav a {
+    color: #7c7d80;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+    font-size: 1.2em;
+}
+
+nav a:target {
+    color: #fff;
+}
+
+nav a:hover {
+    color: #fff;
+}
+
+/* Hamburger Menu */
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.menu-toggle .bar {
+    width: 30px;
+    height: 4px;
+    background-color: white;
+    border-radius: 5px;
+}
+
+/* Download Button Styles */
+.button {
+    --width: 100px;
+    --height: 35px;
+    --button-color: #f5c269;
+    width: var(--width);
+    height: var(--height);
+    background: var(--button-color);
+    position: relative;
+    text-align: center;
+    border-radius: 0.45em;
+    font-family: "Arial";
+    transition: background 0.3s;
+}
+.text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Button Icon Styles */
+.button-wrapper, .text, .icon {
+    overflow: hidden;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    color: #34353a;
+}
+
+.text {
+    top: 0;
+}
+
+.text, .icon {
+    transition: top 0.5s;
+}
+
+.icon {
+    color: #34353a;
+    top: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon svg {
+    width: 24px;
+    height: 24px;
+}
+
+.button:hover {
+    background: #f5c269;
+}
+
+.button:hover .text {
+    top: -100%;
+}
+
+.button:hover .icon {
+    top: 0;
+}

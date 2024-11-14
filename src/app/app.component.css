@@ -9,7 +9,6 @@
 html, body {
     height: 100%; /* Ensures full height */
     background-color: #3d3e42; /* Example background color */
-    font-family: 'Arial', sans-serif; /* Optional: Set a global font */
 }
 
 /* Optional: if you want a specific background color */

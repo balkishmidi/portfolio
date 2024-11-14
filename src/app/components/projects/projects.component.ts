@@ -10,65 +10,36 @@ import { Component, OnInit } from '@angular/core';
 export class ProjectsComponent implements OnInit {
   projects = [
     {
-      name: 'Project 1',
-      description: 'This is a description of project 1.',
-      link: 'https://example.com/project1',
-      image: 'path/to/project1-image.jpg'
+      id: 1,
+      name: 'RescueFood',
+      description: 'Web Application Development Project.',
+      image: 'assets/Gra.png'
     },
     {
-      name: 'Project 2',
-      description: 'This is a description of project 2.',
-      link: 'https://example.com/project2',
-      image: 'path/to/project2-image.jpg'
+      id: 2,
+      name: 'Symptom Checker',
+      description: 'Web Application Development Project.',
+      image: 'assets/checker.jpg'
     },
     {
-      name: 'Project 3',
-      description: 'This is a description of project 3.',
-      link: 'https://example.com/project3',
-      image: 'path/to/project3-image.jpg'
+      id: 3,
+      name: 'CinéMatch App ',
+      description: 'UI/UX Design Project.',
+      image: 'assets/cinematch-logo.jpeg'
     },
     {
-      name: 'Project 4',
-      description: 'This is a description of project 4.',
-      link: 'https://example.com/project4',
-      image: 'path/to/project4-image.jpg'
+      id: 4,
+      name: 'TEKTAI',
+      description: 'Web Application Development Project',
+      image: 'assets/tektai.png'
     },
     {
-      name: 'Project 5',
-      description: 'This is a description of project 4.',
-      link: 'https://example.com/project4',
-      image: 'path/to/project4-image.jpg'
+      id: 5,
+      name: 'AutoXpress',
+      description: 'Web/Mobile/Desktop Development Project',
+      image: 'assets/autoxpress.png'
     },
-    {
-      name: 'Project 1',
-      description: 'This is a description of project 1.',
-      link: 'https://example.com/project1',
-      image: 'path/to/project1-image.jpg'
-    },
-    {
-      name: 'Project 2',
-      description: 'This is a description of project 2.',
-      link: 'https://example.com/project2',
-      image: 'path/to/project2-image.jpg'
-    },
-    {
-      name: 'Project 3',
-      description: 'This is a description of project 3.',
-      link: 'https://example.com/project3',
-      image: 'path/to/project3-image.jpg'
-    },
-    {
-      name: 'Project 4',
-      description: 'This is a description of project 4.',
-      link: 'https://example.com/project4',
-      image: 'path/to/project4-image.jpg'
-    },
-    {
-      name: 'Project 5',
-      description: 'This is a description of project 4.',
-      link: 'https://example.com/project4',
-      image: 'path/to/project4-image.jpg'
-    }
+    
     // Add more projects as needed
   ];
 

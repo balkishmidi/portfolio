@@ -7,13 +7,14 @@
           <div class="overlay">
             <h2>{{ project.name }}</h2>
             <p>{{ project.description }}</p>
-            <a [href]="project.link" target="_blank" class="see-more-btn">See More →</a>
+            <a [routerLink]="['/projects', project.id]" class="see-more-btn">See More →</a>
+
           </div>
         </div>
       </div>
     </div>
     
-    <a href="your-link" class="view-more-btn">View More →</a>
+    <a href="your-link" class="view-more-btn">View More</a>
   </section>
   
   

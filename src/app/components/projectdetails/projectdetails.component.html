@@ -1,0 +1,24 @@
+<app-nav></app-nav>
+
+<div class="section">
+    <div class="project-container" *ngIf="project; else noProject">
+        <img [src]="project.image" alt="{{ project.name }}">
+        
+        <div class="project-details">
+          <h2>{{ project.name }}</h2>
+          <h3>{{ project.year }}</h3>
+          <p [innerHTML]="sanitizedDescription"></p>
+          <button class="button" (click)="visitProject()">Visit Project</button>
+        </div>
+      </div>
+      
+      <ng-template #noProject>
+        <p class="no-project-message">Project not found. Please check the project ID or return to the homepage.</p>
+      </ng-template>
+      
+  
+</div>
+
+<router-outlet></router-outlet> <!-- This is where routed components will be inserted -->
+
+<app-contact></app-contact>
